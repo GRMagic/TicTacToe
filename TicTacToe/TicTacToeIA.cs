@@ -99,44 +99,6 @@ namespace TicTacToe
                 }
                 return bestScore;
             }
-
-            //if (isMaximizing)
-            //{
-            //    var bestScore = int.MinValue;
-            //    for (int l = 0; l < 3; l++)
-            //    {
-            //        for (int c = 0; c < 3; c++)
-            //        {
-            //            if (game.CanMove(l, c))
-            //            {
-            //                var gameCopy = game.Clone() as TicTacToe;
-            //                gameCopy.Move(l, c, player);
-            //                int score = MiniMax(gameCopy, player, false);
-            //                bestScore = Math.Max(bestScore, score);
-            //            }
-            //        }
-            //    }
-            //    return bestScore;
-            //}
-            //else // isMinimizing
-            //{
-            //    var bestScore = int.MaxValue;
-            //    var otherPlayer = OtherPlayerThan(player);
-            //    for (int l = 0; l < 3; l++)
-            //    {
-            //        for (int c = 0; c < 3; c++)
-            //        {
-            //            if (game.CanMove(l, c))
-            //            {
-            //                var gameCopy = game.Clone() as TicTacToe;
-            //                gameCopy.Move(l, c, otherPlayer);
-            //                int score = MiniMax(gameCopy, otherPlayer, true);
-            //                bestScore = Math.Min(bestScore, score);
-            //            }
-            //        }
-            //    }
-            //    return bestScore;
-            //}
         }
 
         private static Player OtherPlayerThan(Player me)
